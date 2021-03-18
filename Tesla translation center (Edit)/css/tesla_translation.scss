@@ -1,0 +1,165 @@
+@import "partial/variable";
+
+  @mixin a_hover{
+    a{
+        color:$allColor;
+        font-weight: bold;
+    }
+    a:hover{
+       text-decoration: none;
+    color:white;  
+    transition: 0.4s; 
+    }
+}
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    font-family: "Merriweather", serif;
+  }
+
+  footer,p,h3,h4{
+    color:$allColor;
+}
+
+li{
+    list-style: none;
+}
+
+ 
+    
+header{
+    border: 1px solid $allBackgroundColor;
+    background-color: $allBackgroundColor;
+    height:3.75em;
+    position: sticky; 
+    z-index:1;
+    top: 0;
+        .logo{
+            padding-left: 5vw;
+            @include a_hover();
+        }
+        .navigator{
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                   list-style: none;
+                    @include a_hover();
+                }
+            }
+        }
+        .hamburger{
+            display: flex;
+            justify-content: flex-end;
+            @include a_hover();
+            padding-top: 1em;
+        }
+        .hide_menu{
+            line-height: 2em;
+            display: none;
+            @include a_hover();
+            width: 33%;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: $allBackgroundColor;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 2em;
+margin-top: 3em;
+ul{
+    padding-left: 10%;
+    .fa-times{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+            }
+}
+        }
+    }
+
+main{
+      text-align: center;  
+      background-color: $allBackgroundColor;
+      #logo_picture{
+          text-align: center;
+        padding-top: 3em;
+          img{
+              width: 45%;
+          }
+          p{
+              font-size: 2.5em;
+              font-weight: bold;
+              letter-spacing: 0.1em;
+          }
+      }
+      #about{
+          padding-top:3.5em;
+          h3{
+              font-weight: bold;
+              padding-bottom: 1em;
+          }
+          img{
+              width: 90%;
+              height: 32em;
+              border-radius: 6.3em;
+          }
+      }
+      #services{
+        padding-top:3.5em;   
+        p{
+            span{
+                display: block;
+            }
+        }
+        img{
+            width: 100%;
+            border-radius: 5em;
+        }
+      }
+#connection{
+    padding-top:3.5em;
+    textarea{
+        resize: none;
+    }
+        iframe{
+           width: 100%; 
+           height: 27em;
+        }
+    }
+}
+
+footer{
+        text-align: center;
+        background-color: $allBackgroundColor;
+        .sosial{
+            margin-bottom: 0 !important;
+            padding-bottom: 2.5em;
+            li{
+                padding: 0.5em;
+                display: inline;
+                @include a_hover();
+               a{
+                font-size: 1.5em;
+               }
+            }
+        }
+    }
+
+
+   @import "partial/media"

@@ -1,0 +1,245 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+footer, p, h3, h4 {
+  color: gold;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  border: 1px solid black;
+  background-color: black;
+  height: 3.75em;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+header .logo {
+  padding-left: 5vw;
+}
+
+header .logo a {
+  color: gold;
+  font-weight: bold;
+}
+
+header .logo a:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .navigator ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .navigator ul li {
+  list-style: none;
+}
+
+header .navigator ul li a {
+  color: gold;
+  font-weight: bold;
+}
+
+header .navigator ul li a:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 1em;
+}
+
+header .hamburger a {
+  color: gold;
+  font-weight: bold;
+}
+
+header .hamburger a:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .hide_menu {
+  line-height: 2em;
+  display: none;
+  width: 33%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 2em;
+  margin-top: 3em;
+}
+
+header .hide_menu a {
+  color: gold;
+  font-weight: bold;
+}
+
+header .hide_menu a:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .hide_menu ul {
+  padding-left: 10%;
+}
+
+header .hide_menu ul .fa-times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10%;
+}
+
+main {
+  text-align: center;
+  background-color: black;
+}
+
+main #logo_picture {
+  text-align: center;
+  padding-top: 3em;
+}
+
+main #logo_picture img {
+  width: 45%;
+}
+
+main #logo_picture p {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+main #about {
+  padding-top: 3.5em;
+}
+
+main #about h3 {
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+main #about img {
+  width: 90%;
+  height: 32em;
+  border-radius: 6.3em;
+}
+
+main #services {
+  padding-top: 3.5em;
+}
+
+main #services p span {
+  display: block;
+}
+
+main #services img {
+  width: 100%;
+  border-radius: 5em;
+}
+
+main #connection {
+  padding-top: 3.5em;
+}
+
+main #connection textarea {
+  resize: none;
+}
+
+main #connection iframe {
+  width: 100%;
+  height: 27em;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+}
+
+footer .sosial {
+  margin-bottom: 0 !important;
+  padding-bottom: 2.5em;
+}
+
+footer .sosial li {
+  padding: 0.5em;
+  display: inline;
+}
+
+footer .sosial li a {
+  color: gold;
+  font-weight: bold;
+}
+
+footer .sosial li a:hover {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer .sosial li a {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 992px) {
+  .navigator {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hamburger {
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=tesla_translation.css.map */
